@@ -1,0 +1,530 @@
+/* -------------- NORMALIZE -------------- */
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+/* -------------- fin de NORMALIZE -------------- */
+
+
+
+/* -------------- Background general -------------- */
+html {
+    background-image: url(../images/novia_puerto.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* -------------- fin de Background general -------------- */
+
+
+
+/* -------------- TITULARES -------------- */
+h2 {
+    font-family: Montserrat, serif;
+    color: #334443;
+}
+
+h3 {
+    color: #34656d;
+    font-family: Montserrat, serif;
+    font-size: 2em;
+    margin-left: 2%;
+}
+/* -------------- Fin de TITULARES -------------- */
+
+
+
+/* -------------- PARAGRAPHS -------------- */
+p {
+    font-family: 'Cardo', serif;
+    color: #f6dcbf;
+}
+/* --------------fin de PARAGRAPHS -------------- */
+
+
+
+/* -------------- LISTAS / LINKS-------------- */
+
+/* Links de las listas */
+li a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+/* Estilo de listas */
+li {
+    list-style: none;
+}
+/* -------------- fin de LISTAS / LINKS --------------*/
+
+
+
+/* -------------- HEADER -------------- */
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    position: fixed;
+    z-index: 100;
+}
+
+.logoZequiGasparini {
+    border-radius: 50%;
+    width: 100px;
+    margin: 0 160px;
+    display: block;
+    box-shadow: 2px 2px 20px 0px rgba(41,40,40,0.55);
+}
+
+.linkIconoHeader{
+    position: absolute;
+    max-width: 100px;
+}
+
+.headerButton {
+    font-size: 20px;
+    color:#aaaaaa;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #334443;
+    margin: 0 0;
+    padding: 20px;
+    display: inline;
+    position: relative;
+    background: none;
+}
+
+.header__menu-ul {
+    font-size: 0;
+    position: relative;
+    top: -10vh;
+    left: 15vw;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__menu-ul li {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    font-size: 20px;
+}
+
+.header__menu-ul li ul {
+    position: absolute;
+    display: none;
+}
+
+.header__menu-ul li ul li {
+    margin: 15px 5px;
+}
+
+.header__menu-ul ul li {
+    display: block;
+    width: auto;
+}
+
+
+.header__menu-ul li:hover ul {
+    display: block;
+    background-color: black;
+    width: 200%;
+    height: auto;
+}
+
+.active {
+    color: #f6dcbf;
+    font-weight: 700;
+    padding: 5px;
+    border-bottom: 2px solid #f6dcbf;
+    border-radius: 0;
+}
+
+
+
+
+/* -------------- fin del HEADER -------------- */
+
+
+
+
+/* -------------- FOOTER -------------- */
+footer {
+    background-color: #000;
+}
+
+.titular-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.logoFooter {
+    width: 80px;
+}
+
+.titularFooter{
+    color: #aaaaaa;
+    font-family: Montserrat, serif;
+    
+}
+
+.sectionRedes {
+    border: #aaaaaa;
+    border-width: 10px;
+}
+
+.iconos-redes {
+    position: relative;
+    top: -15px;
+    left: 90vw;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes:hover {
+    transform: scale(.7);
+    transition: .4s;
+}
+
+.production {
+    font-family: Montserrat, serif;
+    display: inline;
+    font-size: 10px;
+    color: #aaaaaa;
+    position: relative;
+    top: -10px;
+    left: 40px;
+}
+
+/* -------------- fin de FOOTER -------------- */
+
+
+
+/* -------------- INDEX / HOME --------------*/
+
+.titulares {
+    font-family: Montserrat, serif;
+    height: 100vh;
+    width: 90vw;
+}
+
+.titulares-h1 {
+    font-size: 50px;
+    color: #334443;
+    position: relative;
+    top: 110px;
+    left: 20px;
+}
+
+.titulares-h2 {
+    position: relative;
+    top: 110px;
+    left: 1.2%;
+}
+
+.titulares__h3 {
+    margin: 5vh 2% ;
+    position: relative;
+    top: 5vh;
+}
+
+.imageMain {
+    box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.75);
+}
+
+/* --- Sección de bodas --- */
+
+.sectionHome__wedding {
+    height: 95vh;
+    overflow: hidden;
+}
+.imageWedding-1 {
+    position: relative;
+    top: 10vh;
+    left: 2%;
+    width: 50%;
+}
+
+.imageWedding-2 {
+    position: relative;
+    top: -64.5vh;
+    left: 55vw;
+    width: 30%;
+
+}
+
+.imageWedding-3 {
+    position: relative;
+    top: -62vh;
+    left: 55vw;
+    width: 30%;
+}
+/* --- fin de Galeria zona de bodas --- */
+
+
+/* --- Galeria zona ecuestre --- */
+
+.sectionHome__equestrian {
+    height: 95vh;
+    overflow: hidden;
+    margin-bottom: 15vh;
+}
+
+.imageEquestrian-1 {
+    position: relative;
+    top: 3vh;
+    left: 2%;
+    width: 50%;
+}
+
+.imageEquestrian-2 {
+    position: relative;
+    top: -93.5vh;
+    left: 60vw;
+    width: 20%;
+
+}
+
+.imageEquestrian-3 {
+    position: relative;
+    top: -90vh;
+    left: 55vw;
+    width: 30%;
+}
+/* --- fin de Galeria zona ecuestre --- */
+
+/* -------------- fin del INDEX -------------- */
+
+
+
+/* -------------- BIOGRAPHY -------------- */
+
+.mainBio {
+    background-image: url(../images/zequi_gasparini.png);
+    background-position-y: 50px;
+    background-size: 100%;
+    height: 100vh;
+}
+
+.bio__h3 {
+    position: relative;
+    top: 120px;
+    left: 40px;
+    display: inline;
+    color: #aaaaaa;
+}
+
+.bio__p {
+    position: relative;
+    top: 20vh;
+    left: 60vw;
+    font-size: 25px;
+    width: 35vw;
+    color: whitesmoke;
+}
+.bio__p-history {
+    display: block;
+    position: relative;
+    top: 5vh;
+    left: 2vw;
+}
+
+.bio__p-interview-1 {
+    position: absolute;
+    top: 60vh;
+    left: 5vw;
+}
+
+.bio__p-interview-2 {
+    position: absolute;
+    top: 70vh;
+    left: 7vw;
+    width: 30vw;
+    text-align: center;
+}
+/* -------------- fin de BIOGRAPHY -------------- */
+
+
+
+/* -------------- ECOMMERCE -------------- */
+
+.ecommerce {
+    height: 100vh;
+}
+
+.containerEcommerce {
+    position: relative;
+    top: 100px;
+}
+
+.containerEcommerce h3{
+    position: relative;
+    left: 30px;
+    display: inline;
+}
+
+.containerEcommerce_cuadrosVenta td{
+    border-style:groove;
+    font-family: Cardio, serif;
+}
+
+.containerEcommerce__cuadrosVenta img{
+    width: 30vw;
+}
+
+.containerEcommerce__cuadrosVenta {
+    background: rgba(255, 255, 255, 0.3);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: 5vh;
+    left: 3vw;
+}
+
+.containerEcommerce__cuadrosVenta caption {
+    font-family: Montserrat, serif;
+}
+/* -------------- fin de ECOMMERCE -------------- */
+
+
+
+
+/* -------------- BLOG -------------- */
+.mainBlog {
+    background: rgb(227,250,255);
+    background: linear-gradient(90deg, rgba(227,250,255,1) 0%, rgba(125,125,125,0.21052170868347342) 35%, rgba(227,250,255,1) 100%);
+}
+
+.mainBlog__container {
+    position: relative;
+    top: 120px;
+}
+
+.mainBlog__container h3 {
+    font-family: Montserrat, serif;
+    position: relative;
+    top: -20px;
+    left: 30px;
+    display: inline;
+}
+
+.mainBlog h4 {
+    font-family: Montserrat, serif;
+    margin: 10px;
+    left: 40%;
+}
+
+.blog p {
+    display: inline;
+    margin: 10px 30px;
+    color: #334443;
+    width: 50%;
+    position: absolute;
+
+}
+
+.article {
+    height: 100vh;
+}
+
+.article__1 h4 {
+    position: absolute;
+    top: 80px;
+}
+
+.article__1 p {
+    top: 200px;
+    left: 40%;
+}
+
+
+
+.article__2 h4 {
+    position: absolute;
+    top: 1150px;
+    left: 820px;
+}
+
+
+.article__2 p{
+    top: 1250px;
+    left: 45%;
+}
+
+
+
+.article__3 h4 {
+    position: absolute;
+    top: 230vh;
+    left: 59%;
+}
+
+.article__3 p {
+    top: 250vh;
+    left: 60%;
+    width: 700px;
+}
+
+.blog img {
+    height: 70vh;
+    margin-left: 30px;
+
+}
+
+/* -------------- fin de BLOG -------------- */
+
+
+
+/* -------------- CONTACT -------------- */
+
+.formQuestion {
+    color: black;
+    margin: 60px 10px 10px;
+    font-family: Montserrat, serif;
+    display: block;
+}
+
+.form {
+    height: 100vh;
+    width: 30vw;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.form h3 {
+    position: relative;
+    top: 15vh;
+    left: 3vw;
+}
+
+.form form {
+    position: relative;
+    top: 30vh;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    font-family: Montserrat, serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.inputTransparent{
+    background: transparent;
+}
+
+
+.buttonForm {
+    width: 100px;
+    height: 30px;
+    background: black;
+    color: #aaaaaa;
+    font-family: Montserrat, serif;
+    font-weight: 700;
+}
+/* -------------- fin de FORM -------------- */
